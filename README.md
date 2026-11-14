@@ -1,3 +1,9 @@
+
+
+Uploading VIDEO MECHANIC.mp4…
+
+
+
 # Mechanics Lab: a Python physics simulator
 
 Pure Python 3.8+, no dependencies. Place pendulums, springs, balls and planets in the
