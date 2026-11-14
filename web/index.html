@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mechanics Lab</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Mechanics Lab</h1>
+  <label>Example
+    <select id="preset"><option value="">Choose a scene…</option></select>
+  </label>
+  <label>Gravity <input id="grav" value="9.81" size="5"> m/s²</label>
+  <label>Duration <input id="tend" value="12" size="4"> s</label>
+  <label>Speed
+    <select id="speed"><option value="0.25">0.25×</option><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option></select>
+  </label>
+  <label class="chk"><input type="checkbox" id="trails" checked> Trails</label>
+  <button id="play" class="primary">Pause</button>
+  <button id="restart">Restart</button>
+  <button id="clear">Clear</button>
+</header>
+<main>
+  <aside id="parts"><h2>Objects</h2></aside>
+  <section id="board-wrap">
+    <canvas id="board"></canvas>
+    <div id="hint">Pick an object, then click the board to place it. Drag to move, click to edit its numbers.</div>
+  </section>
+  <aside id="inspector"></aside>
+  <section id="scope-wrap">
+    <div id="scope-bar">
+      <div class="tabs"><button data-mode="motion" class="on">Motion</button><button data-mode="energy">Energy</button></div>
+      <div id="chips"></div>
+      <span id="readout"></span>
+      <span id="status"></span>
+    </div>
+    <canvas id="scope"></canvas>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
